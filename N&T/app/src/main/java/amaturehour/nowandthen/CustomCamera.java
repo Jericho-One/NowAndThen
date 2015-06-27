@@ -165,7 +165,7 @@ public class CustomCamera extends Activity implements PictureCallback, SurfaceHo
         }
 
         //set the transparency to the mid level initially
-        mOverlayImage.setAlpha(MID_TRANSPARENCY);
+        mOverlayImage.setImageAlpha(MID_TRANSPARENCY);
         //make the image visible
         mOverlayImage.setVisibility(View.VISIBLE);
 
@@ -218,7 +218,7 @@ public class CustomCamera extends Activity implements PictureCallback, SurfaceHo
 
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser){
                 if(progress <= MAX_TRANSPARENCY) {
-                    mOverlayImage.setAlpha(progress);
+                    mOverlayImage.setImageAlpha(progress);
                 }
             }
 

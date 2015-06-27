@@ -341,7 +341,7 @@ public class EditPictureFragment extends Fragment {
             mOverlayImage.setImageBitmap(mEditableBitmap);
         }
         //set the transparency to the mid level initially
-        mOverlayImage.setAlpha(MID_TRANSPARENCY);
+        mOverlayImage.setImageAlpha(MID_TRANSPARENCY);
         //make the image visible
         mOverlayImage.setVisibility(View.VISIBLE);
     }
@@ -358,7 +358,7 @@ public class EditPictureFragment extends Fragment {
 
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser){
                 if(progress <= MAX_TRANSPARENCY) {
-                    mOverlayImage.setAlpha(progress);
+                    mOverlayImage.setImageAlpha(progress);
                 }
             }
 
